@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:background="@color/bg_fragment">
+
+    <ImageView
+        android:id="@+id/explist_img_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_bulb"
+        android:paddingLeft="30dp"
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/explist_device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/explist_img_icon"
+        android:focusable="false"
+        android:text="具体设备名称"
+        android:textSize="15sp"
+        android:textColor="@color/text_topbar"/>
+    <ToggleButton
+        android:id="@+id/sensor_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="#00000000"
+        style="@style/MyToggleButton"
+        android:checked="true"
+        android:textOff=""
+        android:textOn="" />
+</RelativeLayout>
